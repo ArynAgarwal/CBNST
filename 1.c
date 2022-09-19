@@ -1,6 +1,7 @@
 #include<stdio.h>
 
 static double x = 1.734592;
+
 static double xr = 1.7346;
 
 double absoE(double a,double b){
