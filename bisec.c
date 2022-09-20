@@ -33,6 +33,7 @@ void main ()
         x=x1;
     }
     while (itr < maxmitr);
+    
     printf("The solution does not converge or iterations are not sufficient");
     return 1;
 }
