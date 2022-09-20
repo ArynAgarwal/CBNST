@@ -16,6 +16,7 @@ int main ()
     float x, a, b, allerr, x1;
     printf("\nEnter the values of a, b, allowed error and maximum iterations:\n");
     scanf("%f %f %f %d", &a, &b, &allerr, &maxmitr);
+    
     bisection (&x, a, b, &itr);
     do
     {
