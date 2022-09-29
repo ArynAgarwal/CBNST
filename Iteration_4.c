@@ -17,5 +17,6 @@ int main(){
         x1=f(x0);
     }
     while(fabs(x1-x0)>0.001);
+    
     printf("Root %.5f obtained at %d th iteration ",x1,count);
 }
