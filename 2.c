@@ -11,6 +11,7 @@ int main(){
 	scanf("%d",&n);
 	n=n+1;
 	int x2 = x;
+	
 	x1 = x2 * 10^n;
 	
 	xt = x1/10;
