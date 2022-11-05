@@ -9,6 +9,7 @@ float df(float x)
 {
     return (float)(3+sin(x));
 }
+
 int main()
 {
     float a=0,b=1,c,res;
