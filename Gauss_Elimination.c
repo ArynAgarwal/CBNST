@@ -6,6 +6,7 @@
 #define   SIZE   10
 
 int main()
+	
 {
 	 float a[SIZE][SIZE], x[SIZE], ratio;
 	 int i,j,k,n;
