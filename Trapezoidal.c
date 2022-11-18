@@ -1,5 +1,3 @@
-//C Program to Implement Trapezoidal Rule
-
 #include<stdio.h>
 
 float findValueAt(float x)
