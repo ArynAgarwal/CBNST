@@ -14,8 +14,6 @@ int main()
     printf("Enter no. of Intervals\n");
     scanf("%d",&n);
 
-    //....................Computations .....................
-
     h=(b-a)/n;
     sum = findValueAt(a) +findValueAt(b);
     for(i=a+h;i<b;i=i+h)
