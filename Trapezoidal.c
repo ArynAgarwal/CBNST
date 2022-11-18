@@ -19,7 +19,7 @@ int main()
     for(i=a+h;i<b;i=i+h)
        sum = sum + 2*findValueAt(i);
     sum = (h * sum)/2;
-    //Print the Output
+
     printf("\nValue of The integral  = %f",sum);
 
 }
