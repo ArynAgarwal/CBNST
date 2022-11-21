@@ -17,7 +17,8 @@ int main()
 
     printf("Enter value of x for which you want y\n");
     scanf("%f",&x);
-
+ 
+    
     for(i=0;i<n;i++)
     {
         term=1;
