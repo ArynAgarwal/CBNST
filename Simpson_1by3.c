@@ -1,8 +1,10 @@
 #include<stdio.h>
+#include<math.h>
+#include<conio.h>
 
 float findValueAt(float x)
 {
-    return 1/(1+x*x);
+    return exp(pow(x,3));//sin(pow(x,1/2));//1/(1+x*x);
 }
 int main()
 {
@@ -17,18 +19,24 @@ int main()
     scanf("%d",&n);
 
     h=(b-a)/n;
-    sum = findValueAt(a) +findValueAt(b);
-
-    for(i=a+h;i<b;i=i+h)
-    {
-       if(position_of_term %2 ==0)
-         sum = sum + 2*findValueAt(i);
-       else
-         sum = sum + 4*findValueAt(i);
-       position_of_term++;
+    float x[n+1],y[n+1];
+    for(int i=0;i<n+1;i++){
+        x[i]=a + i*h;
+    }
+    for(int i=0;i<n+1;i++){
+        y[i] = findValueAt(x[i]);
+        printf("%0.7f, ",y[i]);
+    }
+    sum = y[0] + y[n];
+    for(int i=1;i<n;i++){
+        if(i%2==0){
+            sum = sum + 2*y[i];
+        }
+        else
+            sum = sum + 4*y[i];
     }
     sum = (h * sum)/3;
     //Print the Output
-    printf("\nValue of The integral  = %f",sum);
+    printf("\nValue of The integral  = %0.7f",sum);
 
 }
